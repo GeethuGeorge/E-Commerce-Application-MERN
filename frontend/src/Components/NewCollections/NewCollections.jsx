@@ -9,7 +9,7 @@ const NewCollections = () => {
       
     //to display new collections
     useEffect(() => {
-       fetch("http://localhost:4000/newcollections")
+       fetch("https://e-commerce-application-mern-2b4o.vercel.app/newcollections")
        .then((response)=>response.json())
        .then((data)=>setNew_collection(data))
     }, [])

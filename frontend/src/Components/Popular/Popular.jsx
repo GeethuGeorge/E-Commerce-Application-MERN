@@ -9,7 +9,7 @@ const Popular = () => {
 
     //to display new collections
     useEffect(() => {
-        fetch("http://localhost:4000/popularinwomen")
+        fetch("https://e-commerce-application-mern-2b4o.vercel.app/popularinwomen")
             .then((response) => response.json())
             .then((data) => setpopularProducts(data));
     }, []);
