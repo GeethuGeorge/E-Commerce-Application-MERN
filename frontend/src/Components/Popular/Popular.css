@@ -1,0 +1,145 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    margin-top: 150px;
+    margin-right: 155px;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600px;
+    margin-left:125px ;
+}
+
+.popular hr {
+    width: 200px;
+    margin-left: 125px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular_item {
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    margin-left: 115px;
+}
+
+@media (max-width: 1280px) {
+    .popular {
+        height: 70vh;
+    }
+    .popular h1 {
+        font-size: 40px;
+        margin-left: 105px;
+    }
+
+    .popular hr {
+        margin-left: 105px;
+        width: 160px;
+        height: 4px;
+    }
+
+    .popular_item {
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popular {
+        height: 60vh;
+    }
+    .popular h1 {
+        font-size: 40px;
+        margin-left: 105px;
+    }
+
+    .popular hr {
+        margin-left: 105px;
+        width: 160px;
+        height: 4px;
+    }
+
+    .popular_item {
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+@media (max-width: 640px) {
+    .popular {
+        margin-right: 125px;
+    }
+    .popular h1 {
+        font-size: 30px;
+        margin-left: 105px;
+    }
+
+    .popular hr {
+        margin-left: 105px;
+        width: 130px;
+        height: 3px;
+    }
+
+    .popular_item {
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .popular {
+        margin-right: 125px;
+        margin-top: 1px;
+    }
+    .popular h1 {
+        font-size: 20px;
+        margin-left: 105px;
+    }
+
+    .popular hr {
+        margin-left: 105px;
+        width: 130px;
+        height: 2px;
+    }
+
+    .popular_item {
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    .popular {
+        height: 90vh;
+    }
+
+    .popular h1 {
+        font-size: 13px;
+        margin-left: 125px;
+    }
+
+    .popular hr {
+        margin-left: 125px;
+        width: 130px;
+        height: 2px;
+    }
+
+    .popular_item {
+        /*  margin-top: 30px;
+        gap: 10px; */
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    .popular_item image {
+        width: 190px; 
+    }
+}

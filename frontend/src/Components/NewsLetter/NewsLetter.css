@@ -1,0 +1,241 @@
+.newsLetter {
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 250px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+}
+
+.newsLetter h1 {
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 75px;
+}
+
+.newsLetter p {
+    color: #454545;
+    font-size: 20px;
+}
+
+.newsLetter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsLetter div input {
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsLetter div button {
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .newsLetter {
+        padding: 0px 80px;
+        margin-bottom: 120px;
+        gap: 20px;
+    }
+
+    .newsLetter h1 {
+        font-size: 36px;
+    }
+    .newsLetter p {
+        font-size: 16px;
+    }
+
+    .newsLetter div {
+        width: 600px;
+        height: 60px;
+    }
+
+    .newsLetter div input {
+        width: 400px;
+    }
+
+    .newsLetter div button {
+        width: 160px;
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 1006px) {
+  .newsLetter {
+      margin-bottom: 60px;
+
+  }
+
+  .newsLetter h1 {
+      font-size: 30px;
+  }
+  .newsLetter p {
+      font-size: 14px;
+  }
+
+  .newsLetter div {
+      width: 500px;
+      height: 50px;
+  }
+
+  .newsLetter div input {
+      width: 300px;
+      font-size: 14px;
+  }
+
+  .newsLetter div button {
+      width: 120px;
+      height: 50px;
+      font-size:14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .newsLetter {
+      margin-bottom: 50px;
+      height: 35vh;
+  }
+
+  .newsLetter h1 {
+      font-size: 25px;
+  }
+  .newsLetter p {
+      font-size: 13px;
+  }
+
+  .newsLetter div {
+      width: 450px;
+      height: 48px;
+  }
+
+  .newsLetter input {
+      width: 288px;
+      font-size: 13px;
+  }
+
+  .newsLetter div button {
+      width: 118px;
+      height: 48px;
+      font-size:13px;
+  }
+} 
+
+@media (max-width: 705px)  {
+
+ .newsLetter {
+  margin-bottom: 45px;
+  height: 35vh;
+}
+
+.newsLetter h1 {
+  font-size: 23px;
+}
+.newsLetter p {
+  font-size: 11px;
+}
+
+.newsLetter div {
+  width: 425px;
+  height: 45px;
+}
+
+.newsLetter input {
+  width: 118px;
+  font-size: 12px;
+}
+
+.newsLetter div button {
+  width: 78px;
+  height: 46px;
+  font-size:9px;
+}
+} 
+
+@media (max-width: 662px)  {
+
+  .newsLetter {
+   margin-bottom: 44px;
+   height: 40vh;
+ }
+ 
+ .newsLetter h1 {
+   font-size: 20px;
+ }
+ .newsLetter p {
+   font-size: 10px;
+ }
+ 
+ .newsLetter div {
+   width: 350px;
+   height: 43px;
+ }
+ 
+ .newsLetter input {
+   width: 100px;
+   font-size: 11px;
+ }
+ 
+ .newsLetter div button {
+   width: 70px;
+   height: 45px;
+   font-size:7px;
+ }
+ } 
+ @media (max-width: 558px)  {
+
+  .newsLetter {
+   margin-bottom: 40px;
+   height: 38vh;
+ }
+ 
+ .newsLetter h1 {
+   font-size: 16px;
+ }
+ .newsLetter p {
+   font-size: 8px;
+ }
+ 
+ .newsLetter div {
+   width: 280px;
+   height: 40px;
+ }
+ 
+ .newsLetter input {
+   width: 118px;
+   font-size: 9px;
+ }
+ 
+ .newsLetter div button {
+   width:70px;
+   height: 40px;
+   font-size:5px;
+ }
+ } 
+ 
+
+ 

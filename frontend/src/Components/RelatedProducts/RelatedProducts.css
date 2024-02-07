@@ -1,0 +1,139 @@
+.relatedproducts{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+  height: 90vh;
+  margin-bottom: 50px;
+margin-right: auto;
+}
+.relatedproducts h1{
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.relatedproducts hr{
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background:#252525;
+
+}
+
+.relatedproducts-item{
+  margin-top: 50px;
+  display: flex;
+
+}
+@media (max-width: 1280px) {
+  .relatedproducts {
+      height: 70vh;
+  }
+  .relatedproducts h1 {
+      font-size: 40px;
+      margin-left: 105px;
+  }
+
+  .relatedproducts hr {
+      margin-left: 105px;
+      width: 160px;
+      height: 4px;
+  }
+
+  .relatedproducts_item {
+      margin-top: 30px;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .relatedproducts {
+      height: 60vh;
+  }
+  .relatedproducts h1 {
+      font-size: 40px;
+      margin: auto;
+  }
+
+  .relatedproducts hr {
+    margin: auto;
+      width: 160px;
+      height: 4px;
+  }
+
+  .relatedproducts_item {
+      margin-top: 30px;
+      gap: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .relatedproducts {
+      margin-right: 125px;
+  }
+  .relatedproducts h1 {
+      font-size: 30px;
+      margin-left: 105px;
+  }
+
+  .relatedproducts hr {
+      margin-left: 105px;
+      width: 130px;
+      height: 3px;
+  }
+
+  .relatedproducts_item {
+      margin-top: 30px;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .relatedproducts {
+      margin-right:auto;
+      margin-top: 1px;
+  }
+  .relatedproducts h1 {
+      font-size: 35px;
+      margin: auto;
+  }
+
+  .relatedproducts hr {
+      margin:auto;
+      width: 130px;
+      margin: auto;
+      height: 2px;
+  }
+
+  .relatedproducts_item {
+      margin-top: 30px;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .relatedproducts {
+      height: 90vh;
+  }
+
+  .relatedproducts h1 {
+      font-size: 20px;
+     margin: auto;
+  }
+
+  .relatedproducts hr {
+      margin-left: 125px;
+      width: 110px;
+      margin: auto;
+  }
+
+  .relatedproducts-item {
+      /*  margin-top: 30px;
+      gap: 10px; */
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin: auto;
+  }
+}
