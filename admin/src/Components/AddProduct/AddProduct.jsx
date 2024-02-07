@@ -43,7 +43,7 @@ const AddProduct = () => {
             let formData = new FormData();
             formData.append("product", image); // In this case, "product" is an object that contains the image file as one of its properties, and you're appending the entire "product" object to the FormData object.
 
-            let response = await fetch("http://localhost:4000/upload", {
+            let response = await fetch("https://e-commerce-application-mern-2b4o.vercel.app/upload", {
               
                 method: "POST",
                 headers: {
@@ -66,7 +66,7 @@ const AddProduct = () => {
                 console.log(product);
 
                 //Add the product when addproduct is called
-                let resp = await fetch("http://localhost:4000/addproduct", {
+                let resp = await fetch("https://e-commerce-application-mern-2b4o.vercel.app/addproduct", {
                     method: "POST",
                     headers: {
                         Accept: "application/json",
