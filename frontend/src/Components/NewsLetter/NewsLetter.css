@@ -235,6 +235,13 @@
    height: 40px;
    font-size:5px;
  }
+
+ @media (max-width: 413px)  {
+   
+ .newsLetter div {
+  width: 300px;
+  height: 40px;
+}
  } 
  
 

@@ -127,3 +127,31 @@
         gap: 10px;
     }
     }
+
+        
+  @media (max-width: 476px) {
+
+
+    .new-collections h1 {
+        font-size: 13px;
+        margin-left: 100px;
+    }
+    
+    .new-collections hr {
+        margin-left: 105px;
+        width: 120px;
+        height: 3px;
+    }
+
+    .collections {
+        margin-top: 30px;
+        gap: 10px;
+    }
+.collections p{
+    font-size: 9px;
+    width:80px;
+}
+
+
+   
+    }

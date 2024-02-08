@@ -101,4 +101,23 @@
   .shopcategory-indexSort p {
     font-size: 10px;
 }
+
+@media (max-width: 429px) {
+    .shopcategory-products {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+       margin-right: 75px;
+       padding-right: 20px;
+       
+    }
+    .shopcategory-products .item .item-image{
+        width:120px;
+
+    }
+
+    .shopcategory-products .item p{
+       font-size: 12px;
+
+    }
+  }
 }
