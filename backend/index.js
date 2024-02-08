@@ -2,18 +2,27 @@ const port = 4000;
 const express = require("express");
 const app = express();
 
-//importing the following Node.js modules and external libraries:
+// Importing Node.js modules and external libraries
 const cloudinary = require('cloudinary').v2;
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
-const path = require("path"); //core Node.js module that provides utilities for working with file and directory paths
+const path = require("path");
 const cors = require("cors");
+
+// Load environment variables
 require('dotenv').config();
+
+// Middleware
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI);
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.error('MongoDB connection error:', err));
+
+// Routes
 app.get("/", (req, res) => {
     res.send("Express App is running");
 });
