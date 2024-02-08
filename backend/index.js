@@ -42,17 +42,20 @@ const upload = multer({ storage: multer.memoryStorage() });
 // Define the route handler for image uploads
 app.post('/upload', upload.single('product'), async (req, res) => {
     try {
-      // Upload the image file to Cloudinary
-      const result = await cloudinary.uploader.upload(req.file.buffer);
-  
-      // If the upload is successful, send the public URL of the uploaded image back to the client
-      res.json({ 
-        success: true,
-        imageUrl: result.secure_url 
-    });
+        // Convert the buffer to a base64-encoded string
+        const base64String = req.file.buffer.toString('base64');
+
+        // Upload the image file to Cloudinary
+        const result = await cloudinary.uploader.upload(`data:${req.file.mimetype};base64,${base64String}`);
+    
+        // If the upload is successful, send the public URL of the uploaded image back to the client
+        res.json({ 
+            success: true,
+            imageUrl: result.secure_url 
+        });
     } catch (error) {
-      console.error('Error uploading image to Cloudinary:', error);
-      res.status(500).json({ error: 'Failed to upload image' });
+        console.error('Error uploading image to Cloudinary:', error);
+        res.status(500).json({ error: 'Failed to upload image' });
     }
 });
 

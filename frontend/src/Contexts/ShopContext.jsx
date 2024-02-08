@@ -22,7 +22,8 @@ export const ShopContextProvider = ({ children }) => {
 
     //useEffect to display all products from backend
     useEffect(() => {
-        fetch("https://e-commerce-application-mern-2b4o.vercel.app/allproducts")
+        fetch("  https://e-commerce-application-mern-2b4o.vercel.app/allproducts")
+      
             .then((response) => response.json())
             .then((data) => setAll_product(data));
         if (localStorage.getItem("auth-token"))
