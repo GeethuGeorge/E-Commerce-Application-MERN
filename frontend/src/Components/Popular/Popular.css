@@ -12,7 +12,7 @@
     color: #171717;
     font-size: 50px;
     font-weight: 600px;
-    margin-left:125px ;
+    margin-left: 125px;
 }
 
 .popular hr {
@@ -114,32 +114,118 @@
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 472px) {
     .popular {
-        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        height: 100vh;
+        width: 350px;
+        margin-right: 205px;
     }
 
     .popular h1 {
         font-size: 13px;
-        margin-left: 125px;
+        margin-left: 115px;
     }
 
     .popular hr {
-        margin-left: 125px;
+        margin-left: 115px;
         width: 130px;
         height: 2px;
     }
 
     .popular_item {
-        /*  margin-top: 30px;
-        gap: 10px; */
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
+        grid-template-columns: 2fr 2fr;
+        gap: 100px;
+        margin-right: 100px;
+    }
+    .item p {
+        font-size: 12px;
+        width: 155px;
+    }
+    .popular_item .item-image {
+        height: 180px;
+        width: 170px;
+        gap: 55px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 422px) {
+    .popular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popular h1 {
+        font-size: 15px;
+        margin: auto;
+        padding-left: 115px;
     }
 
-    .popular_item image {
-        width: 190px; 
+    .popular hr {
+        margin-left: 105px;
+        width: 130px;
+        height: 2px;
+    }
+
+    .item p {
+        font-size: 10px;
+        width: 155px;
+    }
+    .popular_item {
+    margin-top: 30px;
+        margin-bottom: 18px;
+    }
+
+    .popular_item .item-image {
+        height: 150px;
+        width: 150px;
+        gap: 55px;
+        margin-right: 105px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 361px) {
+    .popular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popular h1 {
+        font-size: 15px;
+        margin: auto;
+        padding-left: 115px;
+    }
+
+    .popular hr {
+        margin-left: 105px;
+        width: 130px;
+        height: 2px;
+    }
+
+    .item p {
+        font-size: 10px;
+        width: 155px;
+    }
+    .popular_item {
+    margin-top: 30px;
+        margin-bottom: 18px;
+    }
+
+    .popular_item .item-image {
+        height: 150px;
+        width: 150px;
+        gap: 55px;
+        margin-right: 135px;
+        margin-bottom: 5px;
     }
 }
