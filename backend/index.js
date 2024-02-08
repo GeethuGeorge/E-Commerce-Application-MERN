@@ -28,13 +28,13 @@ cloudinary.config({
 //-----------------------------------------------
 
 // Configure Multer to handle file uploads
-const upload = multer({ dest: 'upload/' }); // Set the destination folder for temporary file storage
+const upload = multer({ storage: multer.memoryStorage() });
 
 // Define the route handler for image uploads
 app.post('/upload', upload.single('product'), async (req, res) => {
     try {
       // Upload the image file to Cloudinary
-      const result = await cloudinary.uploader.upload(req.file.path);
+      const result = await cloudinary.uploader.upload(req.file.buffer);
   
       // If the upload is successful, send the public URL of the uploaded image back to the client
       res.json({ 
@@ -45,7 +45,8 @@ app.post('/upload', upload.single('product'), async (req, res) => {
       console.error('Error uploading image to Cloudinary:', error);
       res.status(500).json({ error: 'Failed to upload image' });
     }
-  });
+});
+
 
 //----------------------------------------------
 const Product = mongoose.model("Product", {
