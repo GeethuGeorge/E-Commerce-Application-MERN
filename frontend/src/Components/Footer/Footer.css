@@ -76,8 +76,4 @@
         font-size: 15px;
     }
 
-    .footer-social-icons {
-        display: flex;
-        gap: 18px;
-    }
 }
