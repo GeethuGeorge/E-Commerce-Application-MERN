@@ -94,6 +94,7 @@
 }
 
 /*1024*/
+/*1024*/
 @media (max-width: 1024px) {
     .hero-left {
         padding-left: 80px;
@@ -118,9 +119,9 @@
     }
     .hero-right img {
         width: 380px;
-      
     }
 }
+
 /*800*/
 @media (max-width: 800px) {
     .hero-left {
@@ -145,25 +146,19 @@
         font-size: 13px;
     }
 
+    /* Adjust hero-right to occupy full width */
     .hero-right {
-        width: 600px;
-        height: 400px;
+        flex: 1;
     }
     .hero-right img {
-        width: 300px;
-        margin-top: 200px;
+        width: 100%;
+        max-width: 600px; /* Limit width if needed */
+        margin-top: 20px; /* Adjust margin as needed */
     }
 }
 
 /*500*/
 @media (max-width: 500px) {
-    .hero {
-        flex-direction: column;
-    }
-    .hero-right {
-        display: none;
-    }
-
     .hero-left h2 {
         font-size: 18px;
     }
