@@ -1,19 +1,19 @@
 E-commerce 
 This is a sample application that demonstrates an E-commerce website using the MERN stack. 
 The application loads products a MongoDB database and displays them. 
-Admin can add products
-Users can login 
+Admin can add products.
+Users can login .
 Users can click on any product to get more information including pricing, reviews and rating.
-Users can select items and add them to their shopping cart
+Users can select items and add them to their shopping cart.
 
 
-Live Demonstration
+Live Demonstration.
 The E-commerce demo can be viewed online here.-->  https://e-commerce-application-mern-nine.vercel.app/
 
 Login
-Create an account to login or use the below credentials
-email: user1@gmail.com
-pw:123
+Create an account to login or use the below credentials.
+email: user1@gmail.com.
+pw:123.
 
 Here are screenshots that show the E-commerce demo application in use.
 FRONT END
