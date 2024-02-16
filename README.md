@@ -1,4 +1,4 @@
-E-commerce 
+E-commerce :
 This is a sample application that demonstrates an E-commerce website using the MERN stack. 
 The application loads products a MongoDB database and displays them. 
 Admin can add products.
